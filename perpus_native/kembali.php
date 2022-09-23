@@ -14,6 +14,6 @@ if($_GET['id']){
         $denda=$selisih_hari*$harga_denda_perhari;
     }
     mysqli_query($conn, "insert into pengembalian_buku (id_peminjaman_buku, tanggal_pengembalian,denda) value('".$id_peminjaman_buku."','".date('Y-m-d')."','".$denda."')");
-    header('location: histori_peminjaman.php');
+    header('location: history_peminjaman.php');
 }
 ?>
